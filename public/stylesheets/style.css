@@ -26,7 +26,7 @@ a {
 
 .loggedout_menubar_container {
   height: 82px;
-  min-width: 980px;
+  min-width: 100%;
 }
 
 a{
@@ -40,14 +40,14 @@ a{
 }
 
 .pvl {
-  width: 980px;
+  max-width: 980px;
   margin: 0px auto;
 }
 
 .leftside {
   display: inline-block;
   vertical-align: top;
-  width: 565px;
+  max-width: 565px;
   margin-right: 15.999px !important;
   font-family: inherit;
 }
@@ -55,6 +55,6 @@ a{
 .rightside {
   display: inline-block;
   vertical-align: top;
-  width: 399px;
+  max-width: 399px;
   font-family: inherit;
 }

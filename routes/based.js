@@ -9,28 +9,30 @@ var user_controller = require('../controllers/userController');
 // GET user home page
 router.get('/', user_controller.index);
 
+router.post('/', user_controller.user_create_post);
+
 // GET request for creating a User
-router.get('/based/create', user_controller.user_create_get);
+router.get('/create', user_controller.user_create_get);
 
 // POST request for creating a User
-router.get('/based/create', user_controller.user_create_post);
+router.post('/create', user_controller.user_create_post);
 
 // GET request for Deleting a User
-router.get('/based/:id/delete', user_controller.user_delete_get);
+router.get('/:id/delete', user_controller.user_delete_get);
 
 // POST request for Deleting a User
-router.get('/based/:id/delete', user_controller.user_delete_post);
+router.post('/:id/delete', user_controller.user_delete_post);
 
 // GET request for Updating a User
-router.get('/based/:id/update', user_controller.user_update_get);
+router.get('/:id/update', user_controller.user_update_get);
 
 // POST request for Updating a User
-router.get('/based/:id/update', user_controller.user_update_post);
+router.post('/:id/update', user_controller.user_update_post);
 
 // GET request for logged in user homepage
-router.get('/based/:id/', user_controller.user_logged_in);
+router.get('/:id/', user_controller.user_logged_in);
 
 // GET request for logged in user settings
-router.get('/based/:id/settings', user_controller.user_settings);
+router.get('/:id/settings', user_controller.user_settings);
 
 module.exports = router;

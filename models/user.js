@@ -6,7 +6,7 @@ var UserSchema = new Schema(
     {
         first_name: {type:String, require: true, max: 100},
         family_name: {type:String, require:true, max:100},
-        phone_number: {type: Number, max: 11},
+        phone_number: {type: Number},
         birth_date: {type: Date, required: true},
         gender: {type: String, required:true},
         password: {type:String, require:true, max:100}

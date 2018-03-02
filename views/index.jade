@@ -34,20 +34,20 @@ block content
     div.rightside
       h1 #[strong Sign Up]
       h4 It's free and always will be
-      form
+      form(method='POST' action='')
         div.form-row
           div.form-group.col-sm-6
             input.form-control(type='text', placeholder='First name', name='first_name', required='true')
           div.form-group.col-sm-6
-            input.form-control(type='text', placeholder='Last name', name='last_name', required='true')
+            input.form-control(type='text', placeholder='Last name', name='family_name', required='true')
           
-        div.form-group(method='POST' action='')
+        div.form-group
           input#phone_number.form-control(type='number', placeholder='Mobile number or email', name='phonenumber' required='true')
         div.form-group
           input#password.form-control(type='password', placeholder='New password', name='new_password' required='true')
         div.form-group
           label(for='birth_day') Birthday
-          input#birth_day.form-control(type='date', name='date_of_birth', required='true')
+          input#birth_day.form-control(type='date', name='birth_date', required='true')
         div.form-group
           div.form-check.form-check-inline
             input#female.gender.form-check-input(type='radio', name='gender', value='female') 

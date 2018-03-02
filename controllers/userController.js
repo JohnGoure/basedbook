@@ -22,17 +22,19 @@ exports.user_create_post = [
     body('phonenumber').isLength({min:10}).trim().withMessage('Missing phone number.')
     .isNumeric().withMessage('Phone number has non numberic characters.'),
     body('new_password').isLength({min:8}).trim().withMessage('Password must be 8 characters long.'),
+    body('birth_date', 'Invalid date of birth'),
 
     sanitizeBody('first_name').trim().escape(),
     sanitizeBody('family_name').trim().escape(),
     sanitizeBody('phonenumber').trim().escape(),
     sanitizeBody('new_password').trim().escape(),
+    sanitizeBody('birth_date').trim().toDate(),
 
     function(req, res, next) {
         const errors = validationResult(req);
 
         if (!errors.isEmpty()) {
-            res.render('user_form', {title: 'Join BaseBook', user: req.body, errors: errors.array()});
+            res.render('index', {title: 'BaseBook', user: req.body, errors: errors.array()});
         }
         else {
             var user = new User({

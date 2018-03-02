@@ -2,8 +2,17 @@ const User = require('../models/user');
 const {body, validationResult} = require('express-validator/check');
 const {sanitizeBody} = require('express-validator/filter');
 
+let async = require('async');
+
 exports.index = function(req, res) {
-    res.render('index', {title: 'basedbook'});
+
+    async.parallel({
+        user_count: function(callback) {
+            User.count(callback);
+        },
+    }, function(err, results) {
+        res.render('index', {title: 'basebook', error:err, data: results});
+    });
 };
 
 exports.user_logged_in = function(req, res) {

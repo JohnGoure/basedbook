@@ -7,6 +7,7 @@ block content
         h1 
           a(href="localhost:3000/" title="Go to Basedbook home" class='button')
             p=title
+          
       form.login
         div.form-group
           div.col-sm-3
@@ -21,6 +22,7 @@ block content
     div.leftside
       h3 
         p #[strong Connect with yourself and the world around you on Basedbook]
+        p #[strong Users:] #{data.user_count}
       
       img.img.ltimg( src='https://scontent-dft4-1.xx.fbcdn.net/v/t39.2365-6/851565_602269956474188_918638970_n.png?oh=64fb20ff3a10258f53e5c6d870075443&oe=5B4C82F5' style='verticle-align: middle')
       p #[strong See photos and updates] from friends in News Feed. 

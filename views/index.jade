@@ -3,11 +3,20 @@ extends layout
 block content
   div.header
     div.loggedout_menubar_container
-      div.lfloat
+      div.title
         h1 
           a(href="localhost:3000/" title="Go to Basedbook home" class='button')
             p=title
-    
+      form.login
+        div.form-group
+          div.col-sm-3
+            label.user_login(for='user_id') Email or Phone
+            input#user_id.form-control(type='text', name='user_id')
+          div.user_login.col-sm-3
+            label(for='user_password') Password
+            input#user_password.form-control(type='password', name='user_password')
+        button.btn.btn-primary Log In
+        
   div.pvl
     div.leftside
       h3 
@@ -25,11 +34,30 @@ block content
     div.rightside
       h1 #[strong Sign Up]
       h4 It's free and always will be
-      div.form
+      form
+        div.form-row
+          div.form-group.col-sm-6
+            input.form-control(type='text', placeholder='First name', name='first_name', require='true')
+          div.form-group.col-sm-6
+            input.form-control(type='text', placeholder='Last name', name='last_name', require='true')
+          
+        div.form-group
+          input#phone_number.form-control(type='number', placeholder='Mobile number or email', require='true')
+        div.form-group
+          input#password.form-control(type='password', placeholder='New password', require='true')
+        div.form-group
+          label(for='birth_day') Birthday
+          input#birth_day.form-control(type='date', name='date_of_birth', required='true')
+        div.form-group
+          div.form-check.form-check-inline
+            input#female.gender.form-check-input(type='radio', name='gender', value='female') 
+            label.form-check-label(for='female') Female
+            input#male.gender.form-check-input(type='radio', name='gender', value='male') 
+            label.form-check-label(for='male') Male
 
-      p By clicking Create Account, you agree to our Terms and that you have read our Data Policy, including our Cookie Use. You may receive SMS Notifications from Bacebook and can opt out at any time.
+        p By clicking Create Account, you agree to our Terms and that you have read our Data Policy, including our Cookie Use. You may receive SMS Notifications from Bacebook and can opt out at any time.
       
-      label.btn Create Account
+        button.btn.btn-primary Create Account
 
       a(href='/localhost:3000') Create a page 
       | for a celebrity, band or business.

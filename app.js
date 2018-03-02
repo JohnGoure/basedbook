@@ -8,7 +8,18 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var based = require('./routes/based');
 
+let compression = require('compression');
+let helmet = require('helmet');
+
 var app = express();
+
+// Set up mongoose connection
+let mongoose = require('mongoose');
+let mongoDB = process.env.MONGODB_URI || 'mongodb://cowman:M00C0wMan@ds155268.mlab.com:55268/basebook';
+mongoose.connect(mongoDB);
+mongoose.Promise = global.Promise;
+let db = mongoose.connection;
+db.on('error', console.error.bind(console, "MongoDB connection err: "));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

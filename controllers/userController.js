@@ -23,10 +23,10 @@ exports.user_create_post = [
     .isNumeric().withMessage('Phone number has non numberic characters.'),
     body('new_password').isLength({min:8}).trim().withMessage('Password must be 8 characters long.'),
 
-    sanitize('first_name').trim().escape(),
-    sanitize('family_name').trim().escape(),
-    sanitize('phonenumber').trim().escape(),
-    sanitize('new_password').trim().escape(),
+    sanitizeBody('first_name').trim().escape(),
+    sanitizeBody('family_name').trim().escape(),
+    sanitizeBody('phonenumber').trim().escape(),
+    sanitizeBody('new_password').trim().escape(),
 
     function(req, res, next) {
         const errors = validationResult(req);

@@ -21,6 +21,7 @@ a {
   min-height: 42px;
   position: relative;
   z-index: 1;
+  width: 100%
 }
 
 .loggedout_menubar_container {

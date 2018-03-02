@@ -41,10 +41,10 @@ block content
           div.form-group.col-sm-6
             input.form-control(type='text', placeholder='Last name', name='last_name', require='true')
           
+        div.form-group(method='POST' action='')
+          input#phone_number.form-control(type='number', placeholder='Mobile number or email', name='phonenumber' require='true')
         div.form-group
-          input#phone_number.form-control(type='number', placeholder='Mobile number or email', require='true')
-        div.form-group
-          input#password.form-control(type='password', placeholder='New password', require='true')
+          input#password.form-control(type='password', placeholder='New password', name='new_password' require='true')
         div.form-group
           label(for='birth_day') Birthday
           input#birth_day.form-control(type='date', name='date_of_birth', required='true')
@@ -57,7 +57,7 @@ block content
 
         p By clicking Create Account, you agree to our Terms and that you have read our Data Policy, including our Cookie Use. You may receive SMS Notifications from Bacebook and can opt out at any time.
       
-        button.btn.btn-primary Create Account
+        button.btn.btn-primary(type='submit') Create Account
 
       a(href='/localhost:3000') Create a page 
       | for a celebrity, band or business.

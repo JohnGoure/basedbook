@@ -11,7 +11,7 @@ exports.index = function(req, res) {
             User.count(callback);
         },
     }, function(err, results) {
-        res.render('index', {title: 'basebook', error:err, data: results});
+        res.render('index', {title: 'Facebook', error:err, data: results});
     });
 };
 
@@ -20,7 +20,7 @@ exports.user_logged_in = function(req, res) {
 }
 
 exports.user_create_get = function(req, res, next) {
-    res.render('user_form', {title: 'Join Basebook'})
+    res.render('user_form', {title: 'Join Basedbook'})
 };
 
 exports.user_create_post = [
@@ -43,7 +43,7 @@ exports.user_create_post = [
         const errors = validationResult(req);
 
         if (!errors.isEmpty()) {
-            res.render('index', {title: 'BaseBook', user: req.body, errors: errors.array()});
+            res.render('index', {title: 'BasedBook', user: req.body, errors: errors.array()});
         }
         else {
             var user = new User({

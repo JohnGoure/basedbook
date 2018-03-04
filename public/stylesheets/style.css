@@ -23,8 +23,8 @@ body {
 
 .loggedout_menubar_container {
   display:grid;
-  grid-gap:35%;
-  width: 978px;
+  grid-gap:30%;
+  width:956px;
 }
 
 .title {
@@ -44,7 +44,7 @@ body {
   grid-gap: 3%;
   grid-auto-rows:auto;
   grid-column-gap: 16px;
-  width: 978px;
+  width: 956px;
 }
 
 .leftside {
@@ -83,28 +83,6 @@ body {
   grid-row:1;
 }
 
-
-@media only screen and (max-width:767px) {
-  .pvl {
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns:(1,1fr);
-    grid-gap: 3%;
-    grid-auto-rows:auto;
-  }
-  
-  .leftside {
-    grid-column:1;
-    grid-row:1;
-  }
-  
-  .rightside {
-    grid-column: 1;
-    grid-row:2;
-    margin-left: 16px;
-  }
-}
 
 a{
   color: black;
@@ -145,4 +123,12 @@ form .col2 {
 }
 form .col3 {
   grid-column:3;
+}
+
+.radio-group {
+  margin-left: 16px;
+}
+
+#agreement {
+  font-size: 10px;
 }

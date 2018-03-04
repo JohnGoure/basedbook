@@ -1,7 +1,8 @@
 # Basedbook a Facebook clone
-[website](https://basedbook.herokuapp.com)
+[BasedBook](https://basedbook.herokuapp.com) is a mock clone of the amazing social network
+[Facebook](https://www.facebook.com).
 
-A mock clone of Facebook.
+
 
 ## Login and create account page
 ![Facebook Clone](/public/images/FacebookClone.png)

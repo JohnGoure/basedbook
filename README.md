@@ -1,7 +1,7 @@
 # Basedbook a Facebook clone
 [website](https://basedbook.herokuapp.com)
 
-I am building a Facebook clone because I find social networks fascinating and I would like to put my website development skills to the test.
+A mock clone of Facebook.
 
 ## Login and create account page
 ![Facebook Clone](/public/images/FacebookClone.png)

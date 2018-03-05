@@ -6,10 +6,15 @@
 ![Facebook Clone](/public/images/FacebookClone.png)
 
 #### To do
-1. Fix the css.
-2. Add sessions
-3. Add Authentication.
-4. Encrypt password.
-5. Setup Heroku for production.
+1. ~~Make user Schema model.~~
+2. ~~Setup index.js routes.~~
+3. ~~Setup userController.js.~~
+4. Add sessions.
+5. Add user Authentication.
+6. Encrypt password.
+7. ~~Create the login and create account View~~
+8. ~~Add the styling.~~
+7. Fix the css to match Facebook.
+8. Setup Heroku for production.
 
 This website is built with a MongoDB using Express for routing, sessions, authentication, validation and sanitization. The package.json lists all of the dependencies used in this app.

@@ -16,5 +16,6 @@
 8. ~~Add the styling.~~
 7. Fix the css to match Facebook.
 8. Setup Heroku for production.
+9. Change client side rendering to use React.js
 
 This website is built with a MongoDB using Express for routing, sessions, authentication, validation and sanitization. The package.json lists all of the dependencies used in this app.

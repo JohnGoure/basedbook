@@ -1,13 +1,14 @@
 import React from 'react';
+import {MessageHeader} from './MessageHeader'
+import {Reaction} from './Reaction'
 
-export const Message = (user_profile_img, username, user_association, description) => (
+export const Message = (imgURL, username, userAssociation, description) => (
     <div className='message'>
-        <img src={user_profile_img}></img>
-        <div className='message-title'>
-            {username}{user_association}
-        </div>
+        <img src={imgURL}></img>
+        <MessageHeader className='message-header' username={username} userassociation={userAssociation} />
         <div className='description'>
             {description}
         </div>
+        <Reaction />
     </div>
 )

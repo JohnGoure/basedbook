@@ -22,9 +22,7 @@
     "mongoose": "^5.0.7",
     "morgan": "~1.9.0",
     "pug": "^2.0.0-rc.4",
-    "serve-favicon": "~2.4.5",
-    "vue": "^2.5.13",
-    "vue-cli": "^2.9.3"
+    "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
     "eslint": "^4.18.1",

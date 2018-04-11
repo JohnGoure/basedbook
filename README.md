@@ -31,3 +31,4 @@ The frontend uses React.js for rendering, babel for compiling, webpack for bundl
 12. Setup Nginx for production.
 
 #### License MIT
+[License.md](/LICENSE.md)

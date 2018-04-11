@@ -8,4 +8,10 @@ var PostSchema = new Schema({
     description: {type:String, require:true, max:220},
 });
 
+PostSchema
+.virtual('url')
+.get(function () {
+    return '/' + this.user + '/' + this._id
+});
+
 module.exports = mongoose.model('Post', PostSchema);

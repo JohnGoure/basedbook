@@ -8,4 +8,10 @@ var ImgSchema = new Schema({
     img: {data: Buffer, contentType: String},
 });
 
+ImgSchema
+.virtual('url')
+.get(function() {
+    return '/' + this.user + '/' + this._id
+})
+
 module.exports = mongoose.model('Img', ImgSchema);

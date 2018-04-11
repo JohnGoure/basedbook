@@ -8,11 +8,15 @@ The frontend uses React.js for rendering, babel for compiling, webpack for bundl
 ## Nearly Complete Login and create account page
 ![BasedBook, Facebook Clone](/public/images/FacebookClone.png)
 
-#### To do
-1. Make user Schema model.
+#### Tasks
+1. Make Models.
+    * ~~User~~
+    * Post
+    * Image
+    * Comment Stack
 2. ~~Setup index.js routes.~~
 3. ~~Setup userController.js.~~
-4. ~Change client side rendering form pug to React.js~ 
+4. ~~Change client side rendering form pug to React.js~~ 
 6. Fix the css to match Facebook.
 7. ~~Create the login and create account View~~
 8. Encrypt password.

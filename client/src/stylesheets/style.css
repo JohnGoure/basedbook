@@ -29,6 +29,7 @@ body {
 }
 
 .title {
+  color: white;
   grid-column:1;
   grid-row:1;
 }

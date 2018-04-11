@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import UserList from './UserList'
-import {AdminProfile} from './AdminProfile';
-import {Profile} from './Profile';
-import {LoggedOut} from './LoggedOut';
+import UserList from './components/admin/UserList'
+import {AdminProfile} from './components/admin/AdminProfile';
+import {Profile} from './components/loggedin/Profile';
+import {LoggedOut} from './components/loggedout/LoggedOut';
 import './stylesheets/style.css';
 
 class App extends Component {

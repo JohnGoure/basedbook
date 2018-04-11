@@ -9,19 +9,25 @@ The frontend uses React.js for rendering, babel for compiling, webpack for bundl
 ![BasedBook, Facebook Clone](/public/images/FacebookClone.png)
 
 #### Tasks
-1. Make Models.
+1. Implement and test Models.
     * ~~User~~
+    * Friend
     * Post
     * Image
     * Comment Stack
-2. ~~Setup index.js routes.~~
-3. ~~Setup userController.js.~~
-4. ~~Change client side rendering form pug to React.js~~ 
-6. Fix the css to match Facebook.
-7. ~~Create the login and create account View~~
-8. Encrypt password.
-9. Add user Authentication.
-10. Setup Heroku for production.
-11. Add sessions.
+2. Implement and test routes.
+3. Implement and test controllers.
+4. ~~Refactor client side rendering from pug to React.js~~ 
+5. Implement and test Views.
+    * Admin
+    * Logged out
+    * Logged in
+6. Implement and test validation/sanitization
+6. Refactor the css to match Facebook.
+8. Implement and test password encryption.
+9. Implement and test user authentication.
+10. Add sessions.
+11. Setup Heroku hosting for production.
+12. Setup Nginx for production.
 
-This website is built with a MongoDB using Express for routing, sessions, authentication, validation and sanitization. The package.json lists all of the dependencies used in this app.
+#### License MIT

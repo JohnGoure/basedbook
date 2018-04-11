@@ -2,7 +2,7 @@
 [BasedBook](https://basedbook.herokuapp.com) is a social network template that follows the design of [Facebook](https://www.facebook.com). This project is a means to hone my skills and to keep learning.
 
 ## Technologies Used
-The frontend uses React.js for rendering, babel for compiling, webpack for bundling. Npm proxies the backend. The backend uses express for RESTful API, routing, validation, sanitization and server side rendering, bcrypt is used for password encryption and mongoose is used to create collections of datarecords in MongoDB. The server is hosted on [Heroku.com](https://www.heroku.com/) with a MongoDB on [Mlab.com](https://mlab.com/). Also I host basedbook on my personal Gcloud compute server, [Tallyrow.com](https://www.tallyrow.com), using Nginx.
+The frontend uses react.js for rendering, babel for compiling, webpack for bundling. Npm proxies the backend. The backend uses express for REST API, routing, validation, sanitization and server side rendering, bcrypt is used for password encryption and mongoose is used to create collections of data records in MongoDB. The server is hosted on [Heroku.com](https://www.heroku.com/) with a MongoDB on [Mlab.com](https://mlab.com/). Also I host basedbook on my personal Gcloud compute server, [Tallyrow.com](https://www.tallyrow.com), using Nginx.
 
 ## Nearly Complete Login and create account page
 ![BasedBook, Facebook Clone](/public/images/FacebookClone.png)

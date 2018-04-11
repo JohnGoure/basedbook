@@ -3,9 +3,9 @@ var timestamps = require('mongoose-timestamps');
 
 var Schema = mongoose.Schema;
 
-var PostSchema = new Schema({
+var ImgSchema = new Schema({
     user: {type: Schema.ObjectId, ref:'User', require: true},
-    description: {type:String, require:true, max:220},
+    img: {data: Buffer, contentType: String},
 });
 
-module.exports = mongoose.model('Post', PostSchema);
+module.exports = mongoose.model('Img', ImgSchema);

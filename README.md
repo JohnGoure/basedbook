@@ -1,6 +1,6 @@
 # Basedbook
 ## Description
-[BasedBook](https://basedbook.herokuapp.com) is a social network template that follows the design of [Facebook](https://www.facebook.com) and other social networks. This project is a means to hone my skills, to not only learn a breadth of new technologies but to gain a strong depth of knowledge.
+[BasedBook](https://basedbook.herokuapp.com) is a social network login template that follows the visual design of [Facebook](https://www.facebook.com) and other social networks.
 
 ## Dependencies 
 * npm 
@@ -15,7 +15,7 @@
 ## Screenshot of Login and create account page
 ![BasedBook, Facebook Clone](/public/images/FacebookClone.png)
 
-#### Tasks
+### Tasks
 1. Implement and test Models.
     * ~~User~~
     * Friend

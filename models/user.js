@@ -1,15 +1,42 @@
 var mongoose = require('mongoose');
 
-var Schema = mongoose.Schema;
-
-var UserSchema = new Schema(
+var UserSchema = new mongoose.Schema(
     {
-        first_name: {type:String, require: true, max: 100},
-        family_name: {type:String, require:true, max:100},
-        phone_number: {type: Number},
-        birth_date: {type: Date, required: true},
-        gender: {type: String, required:true},
-        password: {type:String, require:true, max:100}
+        email: {
+            type: String,
+            unique: true,
+            required: true,
+            trim: true
+        },
+        username: {
+            type: String,
+            unique: true,
+            required: true,
+            trim: true
+        },
+        password: {
+            type: String,
+            required: true,
+        },
+        first_name: {
+            type:String, 
+            required: true, max: 100
+        },
+        family_name: {
+            type:String, 
+            required:true, max:100
+        },
+        phone_number: {
+            type: Number
+        },
+        birth_date: {
+            type: Date, 
+            required: true
+        },
+        gender: {
+            type: String, 
+            required:true
+        }
     }
 );
 

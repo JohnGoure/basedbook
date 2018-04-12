@@ -2,7 +2,16 @@ var express = require('express');
 var router = express.Router();
 var User = require('../models/user')
 
-if (req.body.email &&
+
+// Get rout for reading data
+router.get('/', function(req, res, next) {
+    return res.sendFile(path.join(__dirname + 'templateLogReg/index.html'));
+});
+
+
+// Post rout for updating data
+router.post('/', function (req, res, next) {
+    if (req.body.email &&
     req.body.username &&
     req.body.password &&
     req.body.passwordConf) {
@@ -22,3 +31,4 @@ if (req.body.email &&
             }
         });
     }
+});

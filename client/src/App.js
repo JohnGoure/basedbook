@@ -25,9 +25,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className = 'App'>
-        {this.state.loggedIn ? this.state.admin ? <AdminProfile username = {this.state.username} users={this.state.users}/> : null : null}
-        {this.state.loggedIn ? <Profile username={this.state.username} /> : <LoggedOut />}
+      <div className = 'app'>
+        {(this.props.location.pathname ==="/") ? <LoggedOut /> : null}
       </div>
     );
   }

@@ -10,7 +10,7 @@ export const UserList = ({users}) => (
             </tr>
           </thead>
           <tbody>
-            {users.map(user => <tr key={user.id}>{user.username}</tr>)}
+            {users.map(user => <tr key={user.id}>{user}</tr>)}
           </tbody>
         </table>
       </div>

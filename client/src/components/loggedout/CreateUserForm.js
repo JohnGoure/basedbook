@@ -19,14 +19,14 @@ export const CreateUserForm = () => (
                     <input id='password' className='form-control' type='password' placeholder='New Password' name='new-password' required='true'></input>
                 </div>
                 <div className='form-group col-md-10'>
-                    <label for='birth-date' >Date of Birth</label>
+                    <label>Date of Birth</label>
                     <input id='birth-day' className='form-control' type='date' name='birth-date' required='true'></input>
                 </div>
                 <div className='form-group col-md-10'>
                     <input id='female' className='gender form-check-input' type='radio' name='gender' value='female'></input>
-                    <label className='form-check-label' for='female'>Female</label>
+                    <label className='form-check-label'>Female</label>
                     <input id='male' className='gender form-check-input' type='radio' name='gender' value='male'></input>
-                    <label className='form-check-label' for='male'>Male</label>
+                    <label className='form-check-label'>Male</label>
                 </div>
             </div>
             <p id='agreement'>By clicking Create Account, you agree to our Terms and that you have read our Data Policy, including our Cookie Use. You may receive SMS Notifications from Facebook and can opt out at any time.</p>

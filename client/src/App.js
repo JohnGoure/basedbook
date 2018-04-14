@@ -26,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className = 'app'>
-        {(this.props.location.pathname ==="/") ? <LoggedOut /> : null}
+        {(this.props.location.pathname ==="/") ? <LoggedOut /> : (this.props.location.pathname ==="/adminjgoure") ? <AdminProfile username={"John"} users={["John", "Destiny"]}/> : null}
       </div>
     );
   }

@@ -12,6 +12,7 @@ ReactDOM.render(
     <BrowserRouter>
             <Switch>
                 <Route path="/" component={App} />
+                <Route path="/adminjgoure" component={App} />
                 <Route path="*" component={Whoops404} />
             </Switch>
     </BrowserRouter>, 

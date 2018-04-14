@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import './stylesheets/style.css'
-import { BrowserRouter, Link, Route } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
 import { Whoops404 } from './components/Whoops404'
 
 window.React = React
 
 ReactDOM.render(
     <BrowserRouter>
-        <div>
+            <Switch>
             <Route path="/" component={App} />
             <Route path="*" component={Whoops404} />
-        </div>
+            </Switch>
     </BrowserRouter>, 
     document.getElementById('root')
 );
